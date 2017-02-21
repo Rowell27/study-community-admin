@@ -1,0 +1,20 @@
+<header class="navbar fixed-top" >
+    <nav>
+        <ul class="menus">
+            <li class="menu user" routerLink="/panel">
+                <span class="icon fa-stack fa-lg">
+                    <i class="background fa fa-circle fa-stack-2x"></i>
+                    <i class="font fa fa-user fa-stack-1x fa-inverse"></i>
+                </span>
+                <div class="text">Admin</div>
+            </li>
+            <li class=" menu user" (click)="onClickLogout()" *ngIf="user.logged">
+                <span class="icon fa-stack fa-lg">
+                    <i class="background fa fa-circle fa-stack-2x"></i>
+                    <i class="font fa fa-sign-out fa-stack-1x fa-inverse"></i>
+                </span>
+                <div class="text">Logout</div>
+            </li>
+        </ul>
+    </nav>
+</header>
